@@ -1,7 +1,7 @@
 .contenedorBio {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 293px 400px 50px;
+  grid-template-rows: 293px 450px 50px;
   grid-template-areas: "headerBio" "mainBio" "footerBio";
   justify-content: center; }
   .contenedorBio .headerBio {
@@ -80,7 +80,7 @@
   text-align: justify;
   color: white;
   font-family: "Courier New", Courier, monospace; }
-  .mainBio h1 {
+  .mainBio h1, .mainBio h2 {
     font-family: "Allerta Stencil", "Special Elite", sans-serif;
     text-align: center;
     font-size: 2.2rem;
@@ -91,17 +91,19 @@
     padding: 20px;
     text-align: justify;
     color: white;
-    font-family: "Courier New", Courier, monospace; }
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1rem; }
   .mainBio .bio {
     background-image: url("media/fondo.jpg");
     background-position: center;
     background-size: cover; }
   .mainBio h2 {
-    font-family: "Allerta Stencil", "Special Elite", sans-serif;
-    color: #505050;
+    /*font-family: $fuenteStencil;
+        color: $colorSecundario;*/
     font-size: 1.8rem;
-    text-align: center;
-    padding: 20px; }
+    /*text-align: center;*/
+    padding: 20px;
+    margin: 5px; }
     .mainBio h2 a {
       text-decoration: none;
       color: #505050; }
