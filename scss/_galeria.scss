@@ -1,0 +1,31 @@
+.contenedorGaleria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 293px 1400px 50px;
+    grid-template-areas: 
+    "headerGaleria"
+    "mainGaleria"
+    "footerGaleria";
+    justify-content: center;
+    .headerGaleria {
+        grid-area: headerGaleria;
+    }
+    .mainGaleria {
+        grid-area:mainGaleria;
+    }
+    .footerGaleria {
+        grid-area: footerGaleria;
+    }
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: 480px 480px;
+    grid-template-rows: repeat(4, 320px);
+    justify-content: center;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    img {
+        width: 480px;
+    }
+}

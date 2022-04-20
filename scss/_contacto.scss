@@ -1,0 +1,44 @@
+.contenedorContacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 293px 400px 50px;
+    grid-template-areas: 
+    "headerContacto"
+    "mainContacto"
+    "footerContacto";
+    justify-content: center;
+    .headerContacto {
+        grid-area: headerContacto;
+    }
+    
+    .mainContacto {
+        grid-area: mainContacto;
+        margin: auto;
+    }
+    
+    .footerContacto {
+        grid-area: footerContacto;
+    }
+}
+
+form {
+    display: grid;
+    grid-template-columns: 400px;
+    text-align: center;
+    padding: 10px 0;
+    justify-content: center;
+}
+
+.texto {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    color: white;
+}
+
+div textarea {
+    height: 50px;
+    transition: all;
+    &:focus {
+        height: 150px;
+    }
+}

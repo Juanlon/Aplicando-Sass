@@ -1,0 +1,29 @@
+.contenedorLetras {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 293px 3150px 50px;
+    grid-template-areas: 
+    "headerLetras"
+    "mainLetras"
+    "footerLetras";
+    justify-content: center;
+    .headerLetras {
+        grid-area: headerLetras;
+    }
+    .mainLetras {
+        grid-area:mainLetras;
+    }
+    .footerLetras {
+        grid-area: footerLetras;
+    }
+}
+
+.letras {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 150px;
+    p {
+        text-align: center;
+    }
+}

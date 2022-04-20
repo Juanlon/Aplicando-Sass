@@ -17,9 +17,45 @@
             }
         }
     }
+
+    .contenedorGaleria {
+        @include grid(768px, 293px 2700px 50px)
+    }
+
+    .galeria {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedorLetras {
+        @include grid(768px, 293px 3750px 50px)
+    }
+
+    .letras {
+        display: flex;
+        flex-direction: column;
+        div {
+            align-self:center;
+        }
+    }
 }
 
 @media screen and (max-width: 480px){
+    .contenedor {
+        @include grid(480px, 481px 1070px 50px)
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        iframe {
+            width: 460px;
+            align-self:center;
+        }
+    } 
+
     .contenedorBio {
         @include grid(480px, 481px 550px 50px)
     }
@@ -34,12 +70,98 @@
             display: none;
           }
         }
-    }   
+    }
+    .contenedorDisco {
+        @include grid(480px, 481px 1450px 50px)
+    }
+    .discografia {
+        width: 480px;
+    } 
+    
+    .contenedorContacto {
+        @include grid(480px, 481px 400px 50px)
+    }
+
+    .contenedorMerch {
+        @include grid(480px, 481px 1355px 50px)
+    }
+
+    .modelo img{
+        width: 460px;
+        height: 230px;
+    } 
+
+    .contenedorGaleria {
+        @include grid(480px, 481px 2600px 50px)
+    }
+
+    .galeria img {
+        width: 460px;
+    }
+
+    .contenedorLetras {
+        grid-template-columns: 480px;
+        grid-template-rows: 481px 4100px 50px;
+    }
+
+    .letras {
+        margin: 15px 50px;
+    }
 }
 
 @media screen and (max-width: 425px){
+    .contenedor {
+        @include grid(425px, 477px 1115px 50px)
+    }
+
+    section iframe {
+        width: 425px;
+    }
+
     .contenedorBio {
         @include grid(425px, 477px 600px 50px)
+    }
+
+    .contenedorDisco {
+        @include grid(425px, 477px 1460px 50px)
+    }
+
+    .discografia {
+        width: 425px;
+    }
+
+    .contenedorContacto {
+        @include grid(425px, 477px 400px 50px)
+    }
+
+    .contenedorMerch {
+        @include grid(425px, 477px 1240px 50px)
+    }
+
+    .modelo img{
+        width: 410px;
+        height: 205px;
+        padding: 10px 0;
+    }
+
+    .contenedorGaleria {
+        @include grid(425px, 477px 2405px 50px)
+    }
+
+    .galeria img {
+        width: 425px;
+    }
+
+    .contenedorLetras {
+        @include grid(425px, 477px 3400px 50px)
+    }
+
+    .letras {
+        width: 410px;
+        margin: auto;
+        p {
+            font-size: .8rem;
+        }
     }
 
     .logo {
@@ -63,10 +185,67 @@
 }
 
 @media screen and (max-width: 375px){
+    .contenedor {
+        @include grid(375px, 449px 1115px 50px)
+    }
+
+    section iframe {
+        width: 375px;
+    }
+
     .contenedorBio {
         @include grid(375px, 449px 650px 50px)
     }
 
+    .contenedorDisco {
+        @include grid(375px, 449px 1350px 50px)
+    }
+
+    .discografia {
+        width: 375px;
+        li img {
+            width: 360px;
+            height: 360px;
+        }
+    }
+
+    .contenedorContacto {
+        @include grid(375px, 449px 400px 50px)
+    }
+
+    form {
+        width: 370px;
+        div {
+            width: 370px;
+            margin:auto;
+        }
+    }
+
+    .contenedorMerch {
+        @include grid(375px, 449px 1180px 50px)
+    }
+
+    .modelo img{
+        width: 370px;
+        height: 185px;
+    }
+
+    .contenedorGaleria {
+        @include grid(375px, 449px 2135px 50px)
+    }
+
+    .galeria img {
+        width: 375px;
+    }
+
+    .contenedorLetras {
+        @include grid(375px, 449px 3700px 50px)
+    }
+
+    .letras {
+        width: 360px;
+    }
+    
     .logo {
         width: 375px;
         height: 214px;
@@ -88,8 +267,64 @@
 }
 
 @media screen and (max-width: 320px){
+    .contenedor {
+        @include grid(320px, 417px 1115px 50px)
+    }
+
+    section iframe {
+        width: 320px;
+    }
+
     .contenedorBio {
         @include grid(320px, 417px 700px 50px)
+    }
+
+    .contenedorDisco {
+        @include grid(320px, 417px 1250px 50px)
+    }
+
+    .discografia {
+        width: 320px;
+        li img {
+            width: 310px;
+            height: 310px;
+        }
+    }
+    
+    .contenedorContacto {
+        @include grid(320px, 417px 400px 50px)
+    }
+
+    form {
+        width: 310px;
+        div {
+            width: 310px;
+        }
+    }
+
+    .contenedorMerch {
+        @include grid(320px, 417px 1080px 50px)
+    }
+
+    .modelo img{
+        width: 310px;
+        height: 155px;
+    } 
+
+    .contenedorGaleria {
+        @include grid(320px, 417px 1845px 50px)
+    }
+
+    .galeria img {
+        width: 320px;
+    }
+
+    .contenedorLetras {
+        @include grid(320px, 417px 3900px 50px)
+    }
+
+    .letras {
+        width: 310px;
     }
 
     .logo {
@@ -106,9 +341,6 @@
 
     .pie {
         width: 320px;
-        li {
-            padding: 10px 2px;
-        }
     }
 }
 

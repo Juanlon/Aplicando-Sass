@@ -1,0 +1,31 @@
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 293px 1100px 50px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    justify-content: center;
+    .header {
+        grid-area: header;
+    }
+    .main {
+        grid-area:main;
+    }
+    .footer {
+        grid-area: footer;
+    }
+}
+
+section {
+    display: grid;
+    grid-template-columns: 560px;
+    justify-content: center;
+    iframe {
+        padding: 10px 0px;
+    } 
+}
+
+
+

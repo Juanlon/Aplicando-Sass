@@ -8,18 +8,6 @@ html {
     font-size: 62,5%;
 }
 
-@keyframes animacion {
-    0%{
-        opacity: 0;
-    }
-    50%{
-        opacity: 50%;
-    }
-    100%{
-        opacity: 100%;
-    }
-}
-
 h1 {
     font-family: "Allerta Stencil", "Special Elite", sans-serif;
     text-align: center;
@@ -27,11 +15,6 @@ h1 {
     color: rgb(80, 80, 80);
     margin: 15px;
     padding: 10px;
-    animation-name: animacion;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-delay: 2s;
-    animation-iteration-count:initial;
 }
 
 /*LOGO*/
@@ -48,7 +31,7 @@ h1 {
 .contenedor {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 293px 1070px 50px;
+    grid-template-rows: 293px 1100px 50px;
     grid-template-areas: 
     "header"
     "main"
@@ -155,7 +138,7 @@ iframe {
 .pie li a {
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: rgb(73, 73, 73);
 }
 
@@ -188,7 +171,7 @@ iframe {
 
 p {
     padding: 20px;
-    text-align: justify;
+    text-align: center;
     color: white;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -197,6 +180,7 @@ p {
     background-image: url("media/fondo.jpg");
     background-position: center;
     background-size: cover;
+    text-align: justify;
 }
 
 /*DISCOGRAFÍA*/
@@ -204,7 +188,7 @@ p {
 .contenedorDisco {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 293px 1424px 50px;
+    grid-template-rows: 293px 1550px 50px;
     grid-template-areas: 
     "headerDisco"
     "mainDisco"
@@ -220,6 +204,12 @@ p {
 }
 .footerDisco {
     grid-area: footerDisco;
+}
+
+.discografia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .discografia li {
@@ -411,7 +401,7 @@ h3 {
 .contenedorLetras {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 293px 1280px 50px;
+    grid-template-rows: 293px 3000px 50px;
     grid-template-areas: 
     "headerLetras"
     "mainLetras"
@@ -429,6 +419,14 @@ h3 {
     grid-area: footerLetras;
 }
 
+.letras {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 150px;
+}
+
+/*
 .letras img {
     width: 450px;
 }
@@ -506,7 +504,7 @@ h3 {
 
     .contenedorLetras {
         grid-template-columns: 768px;
-        grid-template-rows: 293px 3140px 50px;
+        grid-template-rows: 293px 3600px 50px;
     }
     
     .letras img {
@@ -594,18 +592,19 @@ h3 {
 
     .contenedorLetras {
         grid-template-columns: 480px;
-        grid-template-rows: 481px 2460px 50px;
+        grid-template-rows: 481px 4000px 50px;
     }
-
+/*
     .letras img {
         width: 460px;
     }
-
+*/
     .letras {
-        width: 480px;
+        margin: 15px 50px;
+        /*width: 480px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center;*/
     }
 
 }
@@ -677,15 +676,16 @@ h3 {
 
     .contenedorLetras {
         grid-template-columns: 425px;
-        grid-template-rows: 477px 2290px 50px;
+        grid-template-rows: 477px 3900px 50px;
     }
-
+/*
     .letras img {
         width: 425px;
     }
-
+*/
     .letras {
         width: 425px;
+        margin: auto;
     }
 }
 
@@ -761,13 +761,13 @@ h3 {
 
     .contenedorLetras {
         grid-template-columns: 375px;
-        grid-template-rows: 449px 2050px 50px;
+        grid-template-rows: 449px 4000px 50px;
     }
-
+/*
     .letras img {
         width: 375px;
     }
-
+*/
     .letras {
         width: 375px;
     }
@@ -799,11 +799,11 @@ h3 {
     .pie {
         width: 320px;
     }
-
+/*
     .pie li {
         padding: 10px 2px;
     }
-
+*/
     .modelo img{
         width: 310px;
         height: 155px;
@@ -845,13 +845,13 @@ h3 {
 
     .contenedorLetras {
         grid-template-columns: 320px;
-        grid-template-rows: 417px 1780px 50px;
+        grid-template-rows: 417px 4500px 50px;
     }
-
+/*
     .letras img {
         width: 320px;
     }
-
+*/
     .letras {
         width: 320px;
     }

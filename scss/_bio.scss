@@ -20,4 +20,31 @@
     }
 }
 
+.mainBio {
+    grid-area:mainBio;
+    padding: 20px;
+    text-align: justify;
+    color: $colorTerciario;
+    font-family: $fuentePrincipal;
+    $parrafo: (
+    20px: 20px,
+    justificado: justify,
+    color: $colorTerciario,
+    fuente: $fuentePrincipal,
+    tamaño: 1rem,
+    );
+    p {
+        padding: map-get($parrafo, 20px);
+        text-align: map-get($parrafo, justificado);
+        color: map-get($parrafo, color);
+        font-family: map-get($parrafo, fuente);
+        font-size: map-get($parrafo, tamaño);
+    }
+    .bio {
+        background-image: url("media/fondo.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+}
+
 

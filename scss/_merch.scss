@@ -1,0 +1,52 @@
+.contenedorMerch {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 293px 1355px 50px;
+    grid-template-areas: 
+    "headerMerch"
+    "mainMerch"
+    "footerMerch";
+    justify-content: center;
+    .headerMerch {
+        grid-area: headerMerch;
+    }
+    .mainMerch {
+        grid-area:mainMerch;
+    }
+    .footerMerch {
+        grid-area: footerMerch;
+    }
+}
+
+.modelo {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    img {
+        width: 600px;
+        height: 300px;
+        padding: 10px;
+    }
+}
+
+@keyframes colorear {
+    0%{
+        color: white;
+    }
+    100%{
+        color: red;
+    }
+}
+
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    animation-name: colorear;
+    animation-duration: 8s;
+    animation-timing-function:ease-in-out;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
