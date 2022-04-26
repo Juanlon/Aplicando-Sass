@@ -1,7 +1,7 @@
 .contenedorMerch {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 293px 1355px 50px;
+    grid-template-rows: 293px 1650px 50px;
     grid-template-areas: 
     "headerMerch"
     "mainMerch"
@@ -12,6 +12,14 @@
     }
     .mainMerch {
         grid-area:mainMerch;
+        .bio {
+            background-image: url("media/fondo.jpg");
+            background-position: center;
+            background-size: cover;
+            span {
+                font-weight: bold;
+            }
+        }
     }
     .footerMerch {
         grid-area: footerMerch;

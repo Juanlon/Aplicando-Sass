@@ -22,7 +22,13 @@ section {
     display: grid;
     grid-template-columns: 560px;
     justify-content: center;
+    background-image: url("media/logo.jpg");
+    background-position: center;
+    background-size: cover;
     iframe {
+        width: 560px; 
+        height: 315px;
+        border: 0;
         padding: 10px 0px;
     } 
 }

@@ -4,6 +4,10 @@
 }
 
 @media screen and (max-width: 768px){
+    .logo2 {
+        display: none;
+    }
+
     .contenedorBio {
         @include grid(768px, 293px 450px 50px)
     }
@@ -19,7 +23,7 @@
     }
 
     .contenedorGaleria {
-        @include grid(768px, 293px 2700px 50px)
+        @include grid(768px, 293px 2800px 50px)
     }
 
     .galeria {
@@ -29,7 +33,7 @@
     }
 
     .contenedorLetras {
-        @include grid(768px, 293px 3750px 50px)
+        @include grid(768px, 293px 3850px 50px)
     }
 
     .letras {
@@ -92,7 +96,7 @@
     } 
 
     .contenedorGaleria {
-        @include grid(480px, 481px 2600px 50px)
+        @include grid(480px, 481px 2700px 50px)
     }
 
     .galeria img {
@@ -101,7 +105,7 @@
 
     .contenedorLetras {
         grid-template-columns: 480px;
-        grid-template-rows: 481px 4100px 50px;
+        grid-template-rows: 481px 4200px 50px;
     }
 
     .letras {
@@ -145,7 +149,7 @@
     }
 
     .contenedorGaleria {
-        @include grid(425px, 477px 2405px 50px)
+        @include grid(425px, 477px 2510px 50px)
     }
 
     .galeria img {
@@ -153,12 +157,12 @@
     }
 
     .contenedorLetras {
-        @include grid(425px, 477px 3400px 50px)
+        @include grid(425px, 477px 3450px 50px)
     }
 
     .letras {
         width: 410px;
-        margin: auto;
+        margin: 2px;
         p {
             font-size: .8rem;
         }
@@ -182,6 +186,7 @@
             padding: 10px;
         }
     }
+
 }
 
 @media screen and (max-width: 375px){
@@ -231,7 +236,7 @@
     }
 
     .contenedorGaleria {
-        @include grid(375px, 449px 2135px 50px)
+        @include grid(375px, 449px 2240px 50px)
     }
 
     .galeria img {
@@ -239,7 +244,7 @@
     }
 
     .contenedorLetras {
-        @include grid(375px, 449px 3700px 50px)
+        @include grid(375px, 449px 3730px 50px)
     }
 
     .letras {
@@ -312,7 +317,7 @@
     } 
 
     .contenedorGaleria {
-        @include grid(320px, 417px 1845px 50px)
+        @include grid(320px, 417px 1960px 50px)
     }
 
     .galeria img {
@@ -320,7 +325,7 @@
     }
 
     .contenedorLetras {
-        @include grid(320px, 417px 3900px 50px)
+        @include grid(320px, 417px 3950px 50px)
     }
 
     .letras {

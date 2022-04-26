@@ -27,6 +27,12 @@ form {
     text-align: center;
     padding: 10px 0;
     justify-content: center;
+    background-image: url(media/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+    div {
+        background-color: transparent;
+    }
 }
 
 .texto {

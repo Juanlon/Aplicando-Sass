@@ -1,8 +1,18 @@
 .logo {
     width: 432px;
     height: 246px;
-    display: block;
-    margin: auto;
+    /*display: block;
+    margin: auto;*/
+}
+
+.logo2 {
+    height: 246px;
+}
+
+h3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .menu {
