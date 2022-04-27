@@ -4,6 +4,7 @@
     justify-content: center;
     li {
         position: relative;
+        align-self: center;
         padding: 10px 20px;
         list-style: none;
         a {
@@ -14,6 +15,9 @@
             &:hover {
                 color: $colorTerciario;
             }
+        }
+        img {
+            height: 60px;
         }
     }
 }

@@ -281,6 +281,7 @@ h3 {
   justify-content: center; }
   .pie li {
     position: relative;
+    align-self: center;
     padding: 10px 20px;
     list-style: none; }
     .pie li a {
@@ -290,6 +291,8 @@ h3 {
       color: #494949; }
       .pie li a:hover {
         color: white; }
+    .pie li img {
+      height: 60px; }
 
 @media screen and (max-width: 768px) {
   .logo2 {
@@ -366,7 +369,9 @@ h3 {
     grid-template-columns: 480px;
     grid-template-rows: 481px 4200px 50px; }
   .letras {
-    margin: 15px 50px; } }
+    margin: 15px 50px; }
+  .pie img {
+    display: none; } }
 
 @media screen and (max-width: 425px) {
   .contenedor {
